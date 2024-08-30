@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor Performance</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .metrics, .logs { margin-bottom: 20px; }
+        .metrics div, .logs div { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Monitor System Performance</h1>
+    <div class="metrics">
+        <h2>Performance Metrics</h2>
+        <div><strong>Server Status:</strong> {{ metrics['server_status'] }}</div>
+        <div><strong>Usage Statistics:</strong> {{ metrics['usage_statistics'] }}</div>
+    </div>
+    <div class="logs">
+        <h2>Activity Logs</h2>
+        <ul>
+            {% for log in logs %}
+                <li>{{ log }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

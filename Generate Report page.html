@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Reports</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .reports { margin-bottom: 20px; }
+        .reports div { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Generate Reports</h1>
+    <div class="reports">
+        <h2>Reports</h2>
+        <div><strong>Usage Statistics:</strong> {{ reports['usage_statistics'] }}</div>
+        <div><strong>System Health:</strong> {{ reports['system_health'] }}</div>
+    </div>
+</body>
+</html>
